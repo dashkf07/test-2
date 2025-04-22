@@ -1,0 +1,135 @@
+
+
+.card {
+    padding: 5px 5px 0;
+    border-radius: 23px 23px 21px 21px;
+    background-color: #fff;
+    position: relative;
+    transition: transform 0.2s ease, padding-bottom 0.2s ease, margin-bottom 0.2s ease;
+    
+    /* Тени для имитации рамки */
+    box-shadow: 
+      inset 0 1px 0 0 #e6e6e6, /* верхняя тень */
+      inset 0 -3px 0 0 #e6e6e6, /* нижняя тень */
+      inset -1px 0 0 0 #e6e6e6, /* левая тень */
+      inset 1px 0 0 0 #e6e6e6; /* правая тень */
+  }
+  
+  .card.clicked {
+    /* Уменьшаем тень при клике */
+    box-shadow: 
+      inset 0 1px 0 0 #e6e6e6, /* верхняя тень */
+      inset 0 -1px 0 0 #e6e6e6, /* нижняя тень */
+      inset -1px 0 0 0 #e6e6e6, /* левая тень */
+      inset 1px 0 0 0 #e6e6e6; /* правая тень */
+    
+    transform: translateY(2px); /* Сдвигаем контейнер вниз */
+  }
+  
+  .image,
+  .imageClosed {
+    width: 100%;
+    height: 140px;
+    background-color: #e6e6e6;
+    border-top-left-radius: 19px;
+    border-top-right-radius: 19px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+  
+  .title,
+  .titleClosed {
+    font-family: Manrope;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 135%;
+    letter-spacing: -0.25px;
+  }
+  
+  .about {
+    padding: 12px 12px 18px;
+  }
+  
+  /* Статусы */
+  .statusNotStarted,
+  .statusProgress,
+  .statusDone {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  
+  .statusNotStarted p,
+  .statusProgress p,
+  .statusDone p {
+    font-family: Manrope;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.25px;
+  }
+  
+  .statusNotStarted p {
+    color: #347de9;
+  }
+  
+  .statusProgress p {
+    color: #8a8a8a;
+  }
+  
+  .statusDone p {
+    color: #7ba100;
+  }
+  
+  /* Стили иконок */
+  .statusNotStarted a,
+  .statusProgress a,
+  .statusDone a {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .progressBar {
+    margin-bottom: 4.5px;
+  }
+  
+  /* Стиль для закрытого курса */
+  .statusClosed {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  
+  .statusClosed p {
+    font-family: Manrope;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.25px;
+    color: #b4b4b4;
+  }
+  
+  .statusClosed a {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #a2a2a2; /* Цвет иконки для закрытого курса */
+  }
+  
+  .wrapperClosed {
+    background-color: #f3f3f3; /* Цвет фона для закрытого курса */
+  }
+  
+  .imageClosed {
+    background-color: #f2f2f2; /* Цвет картинки для закрытого курса */
+  }
+  
+  .titleClosed {
+    color: #a2a2a2; /* Цвет текста для закрытого курса */
+  }
+  
