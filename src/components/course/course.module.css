@@ -6,6 +6,7 @@
     background-color: #fff;
     position: relative;
     transition: transform 0.2s ease, 0.28s ease, margin-bottom 0.2s ease;
+    cursor: pointer;
     
     
     box-shadow: 
