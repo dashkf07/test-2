@@ -117,6 +117,7 @@
 /* Добавление блюра для закрытых карточек */
 .card.closed {
   position: relative;
+  user-select: none !important;
 }
 
 .card.closed::after {
@@ -131,7 +132,6 @@
   border-radius: 23px 23px 21px 21px; 
   z-index: 2;
   cursor: default;
-  user-select: none;
 }
 
 .imageClosed {
