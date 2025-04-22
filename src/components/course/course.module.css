@@ -7,23 +7,23 @@
     position: relative;
     transition: transform 0.2s ease, padding-bottom 0.2s ease, margin-bottom 0.2s ease;
     
-    /* Тени для имитации рамки */
+    
     box-shadow: 
-      inset 0 1px 0 0 #e6e6e6, /* верхняя тень */
-      inset 0 -3px 0 0 #e6e6e6, /* нижняя тень */
-      inset -1px 0 0 0 #e6e6e6, /* левая тень */
-      inset 1px 0 0 0 #e6e6e6; /* правая тень */
+      inset 0 1px 0 0 #e6e6e6, 
+      inset 0 -3px 0 0 #e6e6e6, 
+      inset -1px 0 0 0 #e6e6e6, 
+      inset 1px 0 0 0 #e6e6e6; 
   }
   
   .card.clicked {
-    /* Уменьшаем тень при клике */
+
     box-shadow: 
-      inset 0 1px 0 0 #e6e6e6, /* верхняя тень */
-      inset 0 -1px 0 0 #e6e6e6, /* нижняя тень */
-      inset -1px 0 0 0 #e6e6e6, /* левая тень */
-      inset 1px 0 0 0 #e6e6e6; /* правая тень */
+      inset 0 1px 0 0 #e6e6e6, 
+      inset 0 -1px 0 0 #e6e6e6, 
+      inset -1px 0 0 0 #e6e6e6, 
+      inset 1px 0 0 0 #e6e6e6; 
     
-    transform: translateY(2px); /* Сдвигаем контейнер вниз */
+    transform: translateY(2px);
   }
   
   .image,
@@ -50,7 +50,6 @@
     padding: 12px 12px 18px;
   }
   
-  /* Статусы */
   .statusNotStarted,
   .statusProgress,
   .statusDone {
@@ -81,7 +80,7 @@
     color: #7ba100;
   }
   
-  /* Стили иконок */
+
   .statusNotStarted a,
   .statusProgress a,
   .statusDone a {
@@ -96,7 +95,7 @@
     margin-bottom: 4.5px;
   }
   
-  /* Стиль для закрытого курса */
+
   .statusClosed {
     display: flex;
     justify-content: space-between;
@@ -118,18 +117,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #a2a2a2; /* Цвет иконки для закрытого курса */
+    color: #a2a2a2; 
   }
   
   .wrapperClosed {
-    background-color: #f3f3f3; /* Цвет фона для закрытого курса */
+    background-color: #f3f3f3; 
   }
   
   .imageClosed {
-    background-color: #f2f2f2; /* Цвет картинки для закрытого курса */
+    background-color: #f2f2f2; 
   }
   
   .titleClosed {
-    color: #a2a2a2; /* Цвет текста для закрытого курса */
+    color: #a2a2a2; 
   }
   
