@@ -30,7 +30,7 @@ export function Course({ course }) {
 
   return (
     <div 
-      className={`${styles.card} ${isClicked && !isClosed ? styles.clicked : ''}`} 
+      className={`${styles.card} ${isClicked && !isClosed ? styles.clicked : ''} ${isClosed ? styles.closed : ''}`} 
       onMouseDown={handleMouseDown} 
       onMouseUp={handleMouseUp}
       onTouchStart={handleTouchStart}  // Для мобильных устройств

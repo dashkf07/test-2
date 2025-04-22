@@ -1,136 +1,141 @@
-
-
 .card {
-    padding: 5px 5px 0;
-    border-radius: 23px 23px 21px 21px;
-    background-color: #fff;
-    position: relative;
-    transition: transform 0.2s ease, 0.28s ease, margin-bottom 0.2s ease;
-    cursor: pointer;
-    
-    
-    box-shadow: 
-      inset 0 1px 0 0 #e6e6e6, 
-      inset 0 -3px 0 0 #e6e6e6, 
-      inset -1px 0 0 0 #e6e6e6, 
-      inset 1px 0 0 0 #e6e6e6; 
-  }
-  
-  .card.clicked {
+  padding: 5px 5px 0;
+  border-radius: 23px 23px 21px 21px;
+  background-color: #fff;
+  position: relative;
+  transition: transform 0.2s ease, 0.28s ease, margin-bottom 0.2s ease;
+  cursor: pointer;
+  box-shadow: 
+    inset 0 1px 0 0 #e6e6e6, 
+    inset 0 -3px 0 0 #e6e6e6, 
+    inset -1px 0 0 0 #e6e6e6, 
+    inset 1px 0 0 0 #e6e6e6;
+}
 
-    box-shadow: 
-      inset 0 1px 0 0 #e6e6e6, 
-      inset 0 -1px 0 0 #e6e6e6, 
-      inset -1px 0 0 0 #e6e6e6, 
-      inset 1px 0 0 0 #e6e6e6; 
-    
-    transform: translateY(2px);
-  }
-  
-  .image,
-  .imageClosed {
-    width: 100%;
-    height: 140px;
-    background-color: #e6e6e6;
-    border-top-left-radius: 19px;
-    border-top-right-radius: 19px;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-  }
-  
-  .title,
-  .titleClosed {
-    font-family: Manrope;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 135%;
-    letter-spacing: -0.25px;
-    color: rgb(51,51,51);
-  }
-  
-  .about {
-    padding: 12px 12px 18px;
-  }
-  
-  .statusNotStarted,
-  .statusProgress,
-  .statusDone {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-  }
-  
-  .statusNotStarted p,
-  .statusProgress p,
-  .statusDone p {
-    font-family: Manrope;
-    font-weight: 800;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -0.25px;
-  }
-  
-  .statusNotStarted p {
-    color: #347de9;
-  }
-  
-  .statusProgress p {
-    color: #8a8a8a;
-  }
-  
-  .statusDone p {
-    color: #7ba100;
-  }
-  
+.card.clicked {
+  box-shadow: 
+    inset 0 1px 0 0 #e6e6e6, 
+    inset 0 -1px 0 0 #e6e6e6, 
+    inset -1px 0 0 0 #e6e6e6, 
+    inset 1px 0 0 0 #e6e6e6; 
+  transform: translateY(2px);
+}
 
-  .statusNotStarted a,
-  .statusProgress a,
-  .statusDone a {
-    width: 32px;
-    height: 32px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .progressBar {
-    margin-bottom: 4.5px;
-  }
-  
+.image,
+.imageClosed {
+  width: 100%;
+  height: 140px;
+  background-color: #e6e6e6;
+  border-top-left-radius: 19px;
+  border-top-right-radius: 19px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
 
-  .statusClosed {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-  }
-  
-  .statusClosed p {
-    font-family: Manrope;
-    font-weight: 800;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -0.25px;
-    color: #b4b4b4;
-  }
-  
-  .statusClosed a {
-    width: 32px;
-    height: 32px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #a2a2a2; 
-  }
-  
-  .wrapperClosed {
-    background-color: #f3f3f3; 
-  }
-  
-  .imageClosed {
-    background-color: #f2f2f2; 
-  }
-  
-  .titleClosed {
-    color: #a2a2a2; 
-  }
-  
+.title,
+.titleClosed {
+  font-family: Manrope;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 135%;
+  letter-spacing: -0.25px;
+  color: rgb(51, 51, 51);
+}
+
+.about {
+  padding: 12px 12px 18px;
+}
+
+.statusNotStarted,
+.statusProgress,
+.statusDone {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.statusNotStarted p,
+.statusProgress p,
+.statusDone p {
+  font-family: Manrope;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.25px;
+}
+
+.statusNotStarted p {
+  color: #347de9;
+}
+
+.statusProgress p {
+  color: #8a8a8a;
+}
+
+.statusDone p {
+  color: #7ba100;
+}
+
+.statusNotStarted a,
+.statusProgress a,
+.statusDone a {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.progressBar {
+  margin-bottom: 4.5px;
+}
+
+.statusClosed {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.statusClosed p {
+  font-family: Manrope;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.25px;
+  color: #b4b4b4;
+}
+
+.statusClosed a {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #a2a2a2;
+}
+
+/* Добавление блюра для закрытых карточек */
+.card.closed {
+  position: relative;
+}
+
+.card.closed::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(0.35px);
+  border-radius: 23px 23px 21px 21px; 
+  z-index: 2;
+}
+
+.imageClosed {
+  background-color: #f2f2f2;
+}
+
+.titleClosed {
+  color: #a2a2a2;
+}
