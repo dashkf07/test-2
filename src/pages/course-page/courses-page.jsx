@@ -36,7 +36,7 @@ export function CoursesPage() {
                     <p className={styles.name}>AYA Leader</p>
                     <p className={styles.title}>Курсы</p>
                 </div>
-                <img className={styles.avatar} alt='profile picture'/>
+                <img className={styles.avatar} alt='profile'/>
             </div>
             
             <p className={styles.course}>Выберите курс</p>
