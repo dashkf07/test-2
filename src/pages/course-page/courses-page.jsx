@@ -1,4 +1,4 @@
-import styles from './course-page.module.css'
+import styles from './courses-page.module.css'
 import { Course } from '../../components/course/course'
 
 
@@ -28,7 +28,7 @@ const courses = [
 ]
 
 
-export function CoursePage() {
+export function CoursesPage() {
     return (
         <div className={styles.container}>
             <div className={styles.header}>
@@ -43,7 +43,7 @@ export function CoursePage() {
             
             <div className={styles.coursesList}>
                 {courses.map((course) => (
-                    <Course course={course}  />
+                    <Course course={course} key={course.id} />
                 )
                 
                 )}

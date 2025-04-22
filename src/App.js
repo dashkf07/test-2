@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { CoursePage } from './pages/course-page/course-page';
+import { CoursesPage } from './pages/course-page/courses-page';
 
 
 
@@ -9,7 +9,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<CoursePage />} />
+        <Route path="/" element={<CoursesPage />} />
       </Routes>
     </BrowserRouter>
   );
