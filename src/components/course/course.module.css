@@ -130,6 +130,8 @@
   backdrop-filter: blur(0.35px);
   border-radius: 23px 23px 21px 21px; 
   z-index: 2;
+  cursor: default;
+  user-select: none;
 }
 
 .imageClosed {
